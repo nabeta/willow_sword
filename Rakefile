@@ -24,3 +24,8 @@ load 'rails/tasks/statistics.rake'
 
 require 'bundler/gem_tasks'
 
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.pattern = FileList['spec/**/*_spec.rb']
+end
+
+task :default => :spec

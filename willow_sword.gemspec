@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency "libxml-ruby", "~> 3.1.0"
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'shoulda-matchers'
-  s.add_development_dependency 'factory_girl_rails'
+  s.add_development_dependency 'factory_bot_rails'
   s.test_files = Dir["spec/**/*"]
 
 end

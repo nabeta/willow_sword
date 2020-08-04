@@ -8,7 +8,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 # require 'rspec/autorun'
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 # require 'database_cleaner'
 
 ENGINE_RAILS_ROOT = File.join(File.dirname(__FILE__), '../')
@@ -64,5 +64,5 @@ RSpec.configure do |config|
   #foo
   # [...]
   # add `FactoryGirl` methods
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 end

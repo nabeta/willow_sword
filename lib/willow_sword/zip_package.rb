@@ -43,7 +43,7 @@ module WillowSword
           writeEntries(subdir, zipFilePath, io)
         else
           disk_file = File.open(diskFilePath, "rb")
-          io.get_output_stream(zipFilePath) { |f| f.puts(disk_file.read()) }
+          io.get_output_stream(zipFilePath) { |f| f.write(disk_file.read()) }
           disk_file.close
         end
       }

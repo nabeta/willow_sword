@@ -42,7 +42,8 @@ RSpec.describe WillowSword::BagPackage do
       bag_files = [
         File.join(dst, 'data', 'bagitSpec.pdf'),
         File.join(dst, 'data', 'Swordv2Spec.pdf'),
-        File.join(dst, 'data', 'metadata', 'metadata.xml')
+        File.join(dst, 'data', 'metadata', 'metadata.xml'),
+        File.join(dst, 'data', 'map.jpg')
        ]
       expect(bp.package.bag_files).to match_array(bag_files)
     end
