@@ -27,7 +27,6 @@ RSpec.describe WillowSword::ZipPackage do
       expect(File.exist?(dst)).to be true
       puts '-'*50
       puts dst
-      FileUtils.cp(dst, '/tmp/test1.zip')
       expect(test_zip(@zip_src, dst)).to be_truthy
     end
   end
