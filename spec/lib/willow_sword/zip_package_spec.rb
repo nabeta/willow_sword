@@ -40,7 +40,12 @@ end
 
 def test_zip(src_file, dst_file)
   src_md5 = get_md5(src_file)
+  puts "source file:"
+  p src_md5
+
   dst_md5 = get_md5(dst_file)
+  puts "destination file:"
+  p dst_md5
 
   src_md5 == dst_md5
 end
